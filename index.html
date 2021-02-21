@@ -11,12 +11,6 @@
 	<body>
         <div class="container">
             <header class="header">
-                <img
-                    class="header__background"
-                    src="./images//BG.png"
-                    alt="black background"
-                />
-
                 <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item">Gravity</li>
@@ -28,8 +22,13 @@
                     </ul>
                 </nav>
 
+                <div class="header__background">
+                  <img
+                    src="./images//BG.png"
+                    alt="black background"
+                  />
+                </div>
                 
-
                 <section class="header__workAround">
                     <article class="workAround__text workAround">
                         <h1 class="workAround__title">Work around you and your team</h1>
@@ -153,7 +152,14 @@
                     </nav>
         
                     <form class="firstNavBlock__block feedback">
-                        <input class="feedback__mail" type="text">
+                        <input 
+                            class="feedback__mail"
+                            id="email"
+                            type="email"
+                            name="email"
+                            placeholder="Your email"
+                            required
+                        >
                         <button class="feedback__button" type="submit">send</button>
                     </form>
                 </section>
@@ -172,16 +178,16 @@
         
                     <div class="secondtNavBlock__social socialNetwork">
                         <a class="socialNetwork__networksLink" href="https://www.twetter.com">
-                            <img src="images/Twitter.svg" alt="twetter">
+                            <img src="images/twitter.svg" alt="twetter">
                         
                         <a class="socialNetwork__networksLink" href="https://www.instagram.com">
-                            <img src="./images/Linkedin.svg" alt="linkedin">
+                            <img src="./images/linkedin.svg" alt="linkedin">
         
                         <a class="socialNetwork__networksLink" href="https://www.google.com">
-                            <img src="./images/Google.svg" alt="google">
+                            <img src="./images/google.svg" alt="google">
         
                         <a class="socialNetwork__networksLink" href="https://www.facebook.com">
-                            <img src="./images/Facebook.svg" alt="facebook">
+                            <img src="./images/facebook.svg" alt="facebook">
                     </div>
                 </section>
             </footer>

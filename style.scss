@@ -74,7 +74,7 @@ a {
 
 .header {
   position: relative;
-  width: 1360px;
+  // width: 1360px;
 }
 
 .header__background { 
@@ -83,14 +83,17 @@ a {
 	height: 900px;
 	left: 6px;
 	top: -3px;
+
+  background-image: url("./images//BG.png");
 }
 
 .nav { 
   // max-width: 1017px;
   position: relative;
   top: 85px;
-  left: 119px;
+  // left: 119px;
   // right: 101px;
+  z-index: 1;
   
   &__list { 
     display: flex;
@@ -98,6 +101,7 @@ a {
     list-style-type: none;
     align-content: center;
     flex-basis: auto;
+    margin-left: 119px;
     margin-right: 101px;
     
   }
@@ -451,7 +455,7 @@ main {
 .manageButton {
   padding-top: 50px;
 
-  &__item-right { 
+  &__item:last-child { 
     padding-left: 25px;
   }
 }
@@ -479,49 +483,68 @@ main {
 		&__title { 
       height: 23px;
       width: 74px;
-      margin: 70px 59px 42px 125px;
+      margin: 70px 0 42px 125px;
       border-radius: 0px;
       color: white;
+        //styleName: Paragraph;
+      font-family: Fira Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: center;
 		}
-
-    // &__nav {
-    
-    // }
-
-    &__block {
-      margin: 59px 127px 41px 95px;
-    }
   }
 
   .nav__list-first{
     list-style-type: none;
     display: flex;
+    margin-left: 53px;
   }
 
   .nav__item-first {
-    margin: 70px 59px 42px;
+    margin: 70px 0 42px 60px;
     color: white;
+    white-space: nowrap;
+    //styleName: Paragraph;
+    font-family: Fira Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+
+
   }
 
 .feedback {
+  margin: 60px 127px 41px 108px;
 
   &__mail {
     height: 40px;
     width: 170px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
     background: #F5F4FF;
+    border: none;
 
+    //styleName: Paragrapgh;
+    padding-left: 23px;
+    font-family: Fira Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    vertical-align: bottom;
   }
 
   &__button {
     height: 40px;
     width: 100px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
+    border: none; 
     background: #C6B393;
+    margin-left: 16px;
 
     //styleName: Label;
     font-family: Fira Sans;
@@ -530,7 +553,6 @@ main {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 4px;
-    text-align: center;
 
     color: white;
     text-transform: uppercase;
@@ -548,8 +570,7 @@ main {
 .secondtNavBlock {
   display: flex;
   justify-content: space-between;
-  margin-left: 125px;
-  margin-right: 135px;
+  margin: 36px 135px 35px 125px;
 
   // &__secondtNavBlock__nav {
 
@@ -571,26 +592,38 @@ main {
 
 .nav__item-second {
   margin-right: 0;
-  padding-right: 0;
   padding-right: 42px;
   color: white;
+
+  //styleName: Paragraph;
+  font-family: Fira Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 40%;
+
+
+  
 }
 
 .socialNetwork {
   height: 24px;
-  width: 120px;
-  border-radius: 0px;
+  // width: 130px;
+  // border-radius: 0px;
 
 
 
   &__networksLink {
     height: 14px;
-    width: 14px;
+    width: 16px;
     left: 4px;
-    top: 7px;
+    top: 5px;
     border-radius: 0px;
-
-
+    opacity: 40%;
+    padding: 5px;
   }
 }
 
