@@ -23,11 +23,22 @@
     }
   
   body {
-	max-width: 1360px;
-	margin-left: auto;
-	margin-right: auto;
-  background-color: #E5E5E5;
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E5E5E5;
 
+
+  }
+
+  .container {
+    position: relative;
+    overflow: hidden;
+  
+    @media (min-width: 1360px) {
+      box-shadow: 0 0 65px 0 rgba(0,0,0,0.2);
+      margin: 0 auto;
+    }
   }
   
     h1,
@@ -61,6 +72,10 @@ a {
 	outline: none;
   }
 
+.header {
+  position: relative;
+  width: 1360px;
+}
 
 .header__background { 
 	position: absolute;
@@ -71,19 +86,23 @@ a {
 }
 
 .nav { 
-
+  // max-width: 1017px;
+  position: relative;
+  top: 85px;
+  left: 119px;
+  // right: 101px;
+  
   &__list { 
-      display: flex;
-      justify-content: space-between;
-      list-style-type: none;
-      position: relative;
-      top: 85px;
-      left: 119px;
-      right: 101px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-content: center;
+    flex-basis: auto;
+    margin-right: 101px;
+    
   }
 
   &__item { 
-      padding: auto;
       color: white;
     }
 }
@@ -233,9 +252,9 @@ a {
 
 main { 
   position: relative;
-  top: 303px;
- 
-  }
+  top: 203px;
+  height: 1183px;
+}
 
 	.weLove { 
     display: grid;
@@ -248,7 +267,6 @@ main {
     grid-template-rows: 40px 28px 28px 28px 28px;
     grid-template-columns: 642px 189px 160px;
     gap: 10px 60px;
-    height: 100vh;
     margin: 0;
     left: 126px;
     margin-left: 126px;
@@ -392,17 +410,15 @@ main {
 		}
 	}
 
-	.videoPlay__container { 
-    position: relative;
-    left: 125px;
-    bottom: 220px;
-  }
+.videoPlay__container { 
+  position: relative;
+  left: 125px;
+  top: 99px;
+}
 
 .videoPlay { 
   display: flex;
   flex-direction: column;
-  
-  // bottom: 460px;
 
   &__block { 
     display: flex;
@@ -412,16 +428,14 @@ main {
   &__splashPicture-big { 
     height: 500px;
     width: 825px;
-    // left: 125px;
-    // top: 1358px;
     border-radius: 0px; 
   }
 
   &__splashPicture-arrow { 
     height: 65px;
     width: 65px;
-    left: 505px;
-    // top: 0px;
+    left: 380px;
+    top: 217px;
     position: absolute;
     border-radius: 0px;       
   }
@@ -430,10 +444,7 @@ main {
     height: 500px;
     width: 825px;
     padding-left: 30px;
-    // left: 980px;
-    // top: 1358px;
-    border-radius: 0px;  
-    overflow: hidden;  
+    border-radius: 0px;
   }
 }
 
@@ -447,10 +458,11 @@ main {
 
 
 .footer__container { 
+  position: relative;
   height: 240px;
   width: 1360px;
   left: 0px;
-  top: 2078px;
+  
   border-radius: 0px;
 
   display: flex;
@@ -472,9 +484,9 @@ main {
       color: white;
 		}
 
-    &__nav {
+    // &__nav {
     
-    }
+    // }
 
     &__block {
       margin: 59px 127px 41px 95px;
@@ -539,9 +551,9 @@ main {
   margin-left: 125px;
   margin-right: 135px;
 
-  &__secondtNavBlock__nav {
+  // &__secondtNavBlock__nav {
 
-  }
+  // }
 
   &__secondtNavBlock__social {
     display: flex;
